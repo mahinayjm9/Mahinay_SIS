@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Mahinay_Student Information System\Mahinay_Student Information System\obj\Debug\Mahinay_Student Information System.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Mahinay_Student Information System\Mahinay_Student Information System\obj\Debug\Mahinay_Student Information System.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\source\repos\Mahinay_Student Information System\Mahinay_Student Information System\obj\Debug\Mahinay_Student_Information_System.Form1.resources
+C:\Users\User\source\repos\Mahinay_Student Information System\Mahinay_Student Information System\obj\Debug\Mahinay_Student_Information_System.Properties.Resources.resources
+C:\Users\User\source\repos\Mahinay_Student Information System\Mahinay_Student Information System\obj\Debug\Mahinay_Student Information System.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Mahinay_Student Information System\Mahinay_Student Information System\obj\Debug\Mahinay_Student Information System.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Mahinay_Student Information System\Mahinay_Student Information System\bin\Debug\Mahinay_Student Information System.exe.config
+C:\Users\User\source\repos\Mahinay_Student Information System\Mahinay_Student Information System\bin\Debug\Mahinay_Student Information System.exe
+C:\Users\User\source\repos\Mahinay_Student Information System\Mahinay_Student Information System\bin\Debug\Mahinay_Student Information System.pdb
+C:\Users\User\source\repos\Mahinay_Student Information System\Mahinay_Student Information System\obj\Debug\Mahinay_Student Information System.exe
+C:\Users\User\source\repos\Mahinay_Student Information System\Mahinay_Student Information System\obj\Debug\Mahinay_Student Information System.pdb

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_student" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-3D24QKA\SQLEXPRESS;Initial Catalog=db_student;Integrated Security=True" SettingsObjectName="Mahinay_Student_Information_System.Properties.Settings" SettingsPropertyName="db_studentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.info" Member="infos">
+    <Type Name="info">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="stud_no" Type="System.String" DbType="VarChar(12)" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="bday" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="s_address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_delete" Method="sp_delete">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_save" Method="sp_save">
+    <Parameter Name="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="lname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="bday" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="s_address" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="email" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_search" Method="sp_search">
+    <Parameter Name="key" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_searchResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="STUD_NO" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="[FIRST NAME]" Member="FIRST_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[LAST NAME]" Member="LAST_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[BIRTH DATE]" Member="BIRTH_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AGE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PHONE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_update" Method="sp_update">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="lname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="bday" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="s_address" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="email" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_view" Method="sp_view">
+    <ElementType Name="sp_viewResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="STUD_NO" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="[FIRST NAME]" Member="FIRST_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[LAST NAME]" Member="LAST_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[BIRTH DATE]" Member="BIRTH_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AGE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PHONE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
